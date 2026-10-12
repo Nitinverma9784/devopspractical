@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Practical Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="badge">CI/CD Automated Deployment</div>
+      <h1>DevOps Practical Showcase</h1>
+      <p class="subtitle">HTML, CSS, JavaScript project powered by GitHub Actions & Pages</p>
+    </header>
+
+    <main class="grid">
+      <!-- Card 1: Interactive Greeting -->
+      <section class="card">
+        <h2>Personalized Greeting</h2>
+        <p class="card-desc">Test interactive JavaScript logic built into the client application.</p>
+        <div class="input-group">
+          <input type="text" id="name-input" placeholder="Enter your name" />
+          <button id="greet-btn" class="btn primary-btn">Say Hello</button>
+        </div>
+        <div id="output" class="result-box">Waiting for input...</div>
+      </section>
+
+      <!-- Card 2: Interactive Calculator -->
+      <section class="card">
+        <h2>Quick Calculator</h2>
+        <p class="card-desc">Runs unit-tested mathematical algorithms in your browser.</p>
+        <div class="calc-inputs">
+          <input type="number" id="num1" placeholder="Num 1" value="12" />
+          <span class="plus-sign">+</span>
+          <input type="number" id="num2" placeholder="Num 2" value="8" />
+          <button id="calc-btn" class="btn secondary-btn">Calculate</button>
+        </div>
+        <div id="calc-output" class="result-box">Result: 20</div>
+      </section>
+
+      <!-- Card 3: Pipeline Info -->
+      <section class="card full-width">
+        <h2>Pipeline Status & Features</h2>
+        <ul class="features-list">
+          <li><strong>GitHub Actions CI:</strong> Automatic build and unit tests on <code>push</code> and <code>pull_request</code> to <code>main</code>.</li>
+          <li><strong>Branch Protection:</strong> Requires CI tests to pass before merging PRs.</li>
+          <li><strong>Continuous Deployment:</strong> Automated publish to GitHub Pages upon merge to <code>main</code>.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 DevOps Practical Demo. Built with HTML, CSS, JS & GitHub Actions.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

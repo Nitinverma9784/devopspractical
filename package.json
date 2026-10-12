@@ -1,0 +1,9 @@
+{
+  "name": "devops-sample-app",
+  "version": "1.0.0",
+  "description": "Sample DevOps HTML CSS JS Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --test"
+  }
+}

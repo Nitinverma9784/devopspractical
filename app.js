@@ -1,6 +1,9 @@
-// Core business logic (testable)
 function greet(name) {
   return `Hello, ${name ? name.trim() : 'Guest'}! Welcome to DevOps Demo`;
+}
+
+function formatStatus(status) {
+  return `[Status: ${status ? status.toUpperCase() : 'UNKNOWN'}]`;
 }
 
 function calculateSum(a, b) {
@@ -37,5 +40,5 @@ if (typeof window !== 'undefined') {
 
 // Export for Node.js test runner
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { greet, calculateSum };
+  module.exports = { greet, calculateSum, formatStatus };
 }
